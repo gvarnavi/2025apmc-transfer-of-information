@@ -70,7 +70,7 @@ project:
     tcBF: tilt corrected bright field
 site:
   #  template: book-theme
-  template: /Users/gvarnavides/Documents/myst-sites/myst-theme/.deploy/book
+  template: https://raw.githubusercontent.com/gvarnavi/2025apmc-transfer-of-information/refs/heads/main/custom-book-theme.zip
   options:
     theme: 'dark'
     hide_theme_toggle: true
