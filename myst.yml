@@ -22,6 +22,9 @@ project:
   open_access: true
   license: CC-BY-4.0
   date: 2025-02-04
+  requirements:
+    - 'Dockerfile'
+    - requirements.in
   resources:
     - 'notebooks/**/*'
   references:
