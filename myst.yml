@@ -69,8 +69,7 @@ project:
     WDD: Wigner distribution deconvolution
     tcBF: tilt corrected bright field
 site:
-  #  template: book-theme
-  template: https://raw.githubusercontent.com/gvarnavi/2025apmc-transfer-of-information/refs/heads/main/custom-book-theme.zip
+  template: ./custom-book-theme
   options:
     theme: 'dark'
     hide_theme_toggle: true
