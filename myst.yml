@@ -2,7 +2,7 @@
 version: 1
 project:
   id: gvarnavides-2025apmc-transfer-of-information
-  title: APMC2025 | Transf`er of Information
+  title: APMC2025 | Transfer of Information
   description: Transfer of Information Across Various Phase Retrieval STEM Techniques, as presented by Georgios Varnavides at the 13th Asia Pacific Microscopy Congress 2025.
   short_title: Transfer of Information
   keywords:
@@ -27,8 +27,6 @@ project:
     - requirements.in
   resources:
     - 'notebooks/**/*'
-  references:
-    mystmd: https://mystmd.org/guide
   exports:
     - format: meca
   exclude:
@@ -70,7 +68,7 @@ project:
     OBF: optimum bright field
     tcBF: tilt corrected bright field
   toc:
-    - file: index.md
+    - file: 0.index.md
     - title: Introduction
       children:
         - file: 1.stem-measurements.md
@@ -93,6 +91,7 @@ project:
         - file: 12.ssb-ctf.md
         - file: 13.ptycho-ctf.md
         - file: 14.virtual-ptycho-ctf.md
+    - file: 15.acknowledgments.md
     - title: Notebooks
       children:
         - pattern: notebooks/*.ipynb
