@@ -34,6 +34,7 @@ project:
     - format: meca
   exclude:
     - README.md
+    - custom-book-theme/
   authors:
     - id: gvarnavides
       name: Georgios Varnavides
@@ -67,7 +68,27 @@ project:
     DPC: differential phase contrast
     SSB: single side-band
     WDD: Wigner distribution deconvolution
+    OBF: optimum bright field
     tcBF: tilt corrected bright field
+  toc:
+    - file: index.md
+    - file: 1.stem-measurements.md
+    - file: 2.phase-problem.md
+    - title: STEM Phase Retrieval
+      children:
+        - file: 3.differential-phase-contrast.md
+        - file: 4.parallax-imaging.md
+        - file: 5.direct-ptychography.md
+        - file: 6.iterative-ptychography.md
+    - title: Open Source Methods
+      children:
+        - file: 7.open-source-algorithms.md
+        - file: 8.materials-science-reconstructions.md
+        - file: 9.life-sciences-reconstructions.md
+        - file: 10.bio-crystals-ctf.md
+    - title: Notebooks
+      children:
+        - pattern: notebooks/*.ipynb
 site:
   template: ./custom-book-theme
   options:
@@ -76,3 +97,6 @@ site:
     hide_outline: true
     hide_title_block: true
     hide_search: true
+    logo: ./figures/logo.png
+    logo_dark: ./figures/logo.png
+    favicon: ./figures/favicon.ico
