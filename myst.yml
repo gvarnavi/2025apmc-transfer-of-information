@@ -1,8 +1,8 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  id: gvarnavides-apmc2025-transfer-of-information
-  title: APMC2025 | Transfer of Information
+  id: gvarnavides-2025apmc-transfer-of-information
+  title: APMC2025 | Transf`er of Information
   description: Transfer of Information Across Various Phase Retrieval STEM Techniques, as presented by Georgios Varnavides at the 13th Asia Pacific Microscopy Congress 2025.
   short_title: Transfer of Information
   keywords:
@@ -13,16 +13,12 @@ project:
     - Tilt-Corrected Bright Field STEM
     - Direct Ptychography
     - Iterative Ptychography
-  github: https://github.com/gvarnavi/apmc2025-transfer-of-information
-  #  jupyter: true
+  github: https://github.com/gvarnavi/2025apmc-transfer-of-information
+  jupyter: true
   #  jupyter:
-  #    binder:
-  #      url: https://y2j74k9mn0bz.curvenote.dev/services/binder/
-  #      repo: msa-em/em-quickstart-uv
-  jupyter:
-    server:
-      url: 'http://localhost:8888'
-      token: '512ac78f14e1141db1fac17e8b4099c1e5bc7d589518b38c'
+  #    server:
+  #      url: 'http://localhost:8888'
+  #      token: '512ac78f14e1141db1fac17e8b4099c1e5bc7d589518b38c'
   open_access: true
   license: CC-BY-4.0
   date: 2025-02-04
@@ -72,8 +68,10 @@ project:
     tcBF: tilt corrected bright field
   toc:
     - file: index.md
-    - file: 1.stem-measurements.md
-    - file: 2.phase-problem.md
+    - title: Introduction
+      children:
+        - file: 1.stem-measurements.md
+        - file: 2.phase-problem.md
     - title: STEM Phase Retrieval
       children:
         - file: 3.differential-phase-contrast.md
@@ -86,6 +84,12 @@ project:
         - file: 8.materials-science-reconstructions.md
         - file: 9.life-sciences-reconstructions.md
         - file: 10.bio-crystals-ctf.md
+    - title: Transfer of information
+      children:
+        - file: 11.dpc-ctf.md
+        - file: 12.ssb-ctf.md
+        - file: 13.ptycho-ctf.md
+        - file: 14.virtual-ptycho-ctf.md
     - title: Notebooks
       children:
         - pattern: notebooks/*.ipynb

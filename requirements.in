@@ -8,6 +8,7 @@ ipywidgets
 matplotlib
 ipympl
 colorspacious
+cmasher
 abtem
 ase
 py4dstem
