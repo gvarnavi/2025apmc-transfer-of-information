@@ -31,7 +31,6 @@ project:
     - format: meca
   exclude:
     - README.md
-    - custom-book-theme/
   authors:
     - id: gvarnavides
       name: Georgios Varnavides
@@ -100,7 +99,8 @@ project:
       children:
         - pattern: notebooks/*.ipynb
 site:
-  template: ./custom-book-theme
+  #template: ./custom-book-theme
+  template: https://github.com/gvarnavi/custom-myst-book-theme.git
   options:
     theme: 'dark'
     hide_theme_toggle: true
